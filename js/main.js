@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Typed.js initialization
+  if (document.querySelector('.typed-text')) {
+    var typed = new Typed('.typed-text', {
+      strings: ['Developer', 'Programmer', 'Problem Solver', 'Tech Enthusiast'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navbar = document.querySelector('.navbar');
